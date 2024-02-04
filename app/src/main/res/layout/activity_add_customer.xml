@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutAddCustomer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spattern"
+    android:orientation="vertical"
+    tools:context=".AddCustomer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="4dp"
+                android:textStyle="bold">
+
+                <TextView
+                    android:id="@+id/toolbarTitleAddCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="4dp"
+                    android:shadowColor="#333333"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="4"
+                    android:text="Add Customer"
+                    android:textColor="@color/purple_700"
+                    android:textSize="30sp" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutCustInfoAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/customerLable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="CUSTOMER"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:paddingLeft="5dp">
+
+                                <EditText
+                                    android:id="@+id/custID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/edtbg"
+                                    android:hint="Serial No"
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:paddingLeft="5dp">
+
+                                <EditText
+                                    android:id="@+id/custName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/edtbg"
+                                    android:hint="Name"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:paddingLeft="5dp">
+
+                                <EditText
+                                    android:id="@+id/custNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/edtbg"
+                                    android:hint="Contact"
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutKameezMeasurementsAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="KAMEEZ MEASUREMENT"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Kameez"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/kameezLegth"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="Size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/kameezSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Teera"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/teraLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/terSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Bazo"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/bazoLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/bazoSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Kandha"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/modaLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/modaSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Chati"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/chatiLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/chatiSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Fitting"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/fittingLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/fittingSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Gheera"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/geraLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/geraSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Gala"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/galaLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/galaSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutShalwarMeasurementsAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="SHALWAR MEASUREMENTS"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Shalwar"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/shalwarLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/shalwarSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Pancha"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/panchaLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/ponchaSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Fair"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/fairLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/fairSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Asan"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/asanLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/asanSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutTrouserMeasurementsAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="TROUSER MEASUREMENTS"
+                                android:textColor="@color/purple_700"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Trouser"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/trouserLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/trouserSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Pancha"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/trouserPanchaLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/trouserPonchaSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Fair"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/trouserFairLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/trouserFairSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="start|center"
+                                        android:minHeight="48dp"
+                                        android:text="Asan"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <EditText
+                                        android:id="@+id/trouserAsanLength"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="48dp"
+                                        android:background="@drawable/edtbg"
+                                        android:gravity="center"
+                                        android:hint="size"
+                                        android:inputType="number"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                    <Spinner
+                                        android:id="@+id/trouseraAsanSpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/app_name"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutOtherMeasurementsAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Collar"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/ACCollarTv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2.3"
+                                        android:gravity="center_vertical"
+                                        android:hint="Collar"
+                                        android:minHeight="48dp"
+                                        android:text=""
+                                        android:textSize="17sp" />
+
+                                    <Spinner
+                                        android:id="@+id/ACCollarSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1.8"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/ACCollarWidthEdt"
+                                            android:layout_width="0dp"
+                                            android:layout_height="48dp"
+                                            android:layout_weight="0.6"
+                                            android:background="@drawable/edtbg"
+                                            android:gravity="center"
+                                            android:hint="Width"
+                                            android:inputType="number"
+                                            android:textSize="17sp" />
+
+                                        <Spinner
+                                            android:id="@+id/ACCollarWidthSpinner"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_weight="1.4"
+                                            android:minHeight="48dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="2"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/ACCollarLengthEdt"
+                                            android:layout_width="0dp"
+                                            android:layout_height="48dp"
+                                            android:layout_weight="0.6"
+                                            android:background="@drawable/edtbg"
+                                            android:gravity="center"
+                                            android:hint="Length"
+                                            android:inputType="number"
+                                            android:textSize="17sp" />
+
+                                        <Spinner
+                                            android:id="@+id/ACCollarLengthSpinner"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_weight="1.4"
+                                            android:minHeight="48dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Kaff"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/ACKaffTv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2.3"
+                                        android:gravity="center_vertical"
+                                        android:hint="Kaff"
+                                        android:minHeight="48dp"
+                                        android:text=""
+                                        android:textSize="17sp" />
+
+                                    <Spinner
+                                        android:id="@+id/ACKaffSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1.8"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/ACKaffWidthEdt"
+                                            android:layout_width="0dp"
+                                            android:layout_height="48dp"
+                                            android:layout_weight="0.6"
+                                            android:background="@drawable/edtbg"
+                                            android:gravity="center"
+                                            android:hint="Width"
+                                            android:inputType="number"
+                                            android:text="2"
+                                            android:textSize="17sp" />
+
+                                        <Spinner
+                                            android:id="@+id/ACKaffWidthSpinner"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_weight="1.4"
+                                            android:minHeight="48dp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="2"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/ACKaffLengthEdt"
+                                            android:layout_width="0dp"
+                                            android:layout_height="48dp"
+                                            android:layout_weight="0.6"
+                                            android:background="@drawable/edtbg"
+                                            android:gravity="center"
+                                            android:hint="Length"
+                                            android:inputType="number"
+                                            android:textSize="17sp" />
+
+                                        <Spinner
+                                            android:id="@+id/ACKaffLengthSpinner"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_weight="1.4"
+                                            android:minHeight="48dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Salaei"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/ACSalaeiTv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2.3"
+                                        android:gravity="center_vertical"
+                                        android:hint="Salaei"
+                                        android:minHeight="48dp"
+                                        android:text=""
+                                        android:textSize="17sp" />
+
+                                    <Spinner
+                                        android:id="@+id/ACSalaeiSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1.8"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Gheera"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/ACGheeraTv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2.3"
+                                        android:gravity="center_vertical"
+                                        android:hint="Gheera"
+                                        android:minHeight="48dp"
+                                        android:text=""
+                                        android:textSize="17sp" />
+
+                                    <Spinner
+                                        android:id="@+id/ACGheeraSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1.8"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Dhaga"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/myborder"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp">
+
+                                    <TextView
+                                        android:id="@+id/ACDhagaTv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="2.3"
+                                        android:gravity="center_vertical"
+                                        android:hint="Dhaga"
+
+                                        android:minHeight="48dp"
+                                        android:textSize="17sp" />
+
+                                    <Spinner
+                                        android:id="@+id/ACDhagaSpinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1.8"
+                                        android:minHeight="48dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutPocketMeasurementsAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="POCKTES"
+                                android:textColor="@color/purple_700"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginBottom="5dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="8"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="5"
+                                    android:text="Front pocket"
+                                    android:textSize="17sp" />
+
+                                <EditText
+                                    android:id="@+id/setFrontPocketsEdt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2.5"
+                                    android:background="@drawable/edtbg"
+                                    android:gravity="center"
+                                    android:hint="#No."
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="8"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="5"
+                                    android:text="Side pocket"
+                                    android:textSize="17sp" />
+
+                                <EditText
+                                    android:id="@+id/setSidePocketsEdt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2.5"
+                                    android:background="@drawable/edtbg"
+                                    android:gravity="center"
+                                    android:hint="#No."
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="8"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="5"
+                                    android:text="Shalwar pocket"
+                                    android:textSize="17sp" />
+
+                                <EditText
+                                    android:id="@+id/setShalwarPocketsEdt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2.5"
+                                    android:background="@drawable/edtbg"
+                                    android:gravity="center"
+                                    android:hint="#No."
+                                    android:inputType="number"
+                                    android:textSize="17sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mColor"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="NOTE"
+                                android:textColor="@color/purple_700"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginBottom="5dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:layout_weight="8"
+                                android:background="@drawable/myborder"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp">
+
+                                <EditText
+                                    android:id="@+id/noteEdtAC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="100dp"
+                                    android:background="@drawable/edtbg"
+                                    android:gravity="center"
+                                    android:hint="leave a note"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

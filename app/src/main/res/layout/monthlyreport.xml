@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="horizontal"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/siNoTvReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="SiNo"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/idTvReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="Id"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameTvReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="Name"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/qntyTvReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="Qnty"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dDtaeTvReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="D_Date"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalTvReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+</LinearLayout>

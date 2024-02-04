@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        />
+
+    <item android:id="@+id/nav_addCustomer"
+        android:title="Add"
+        android:icon="@drawable/addcustomer"
+        />
+
+    <item android:id="@+id/nav_viewCustomer"
+        android:title="Customers"
+        android:icon="@drawable/customers_1"
+        />
+
+    <item android:id="@+id/nav_order"
+        android:title="Orders"
+        android:icon="@drawable/order"
+        />
+
+    <item android:id="@+id/nav_other"
+        android:title="Others"
+        android:icon="@drawable/others"
+        />
+
+</menu>

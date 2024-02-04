@@ -1,0 +1,46 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/drawable/add.xml" value="0.204" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/drawable/customer.xml" value="0.204" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/drawable/myborder.xml" value="0.204" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/drawable/myborder1.xml" value="0.204" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/drawable/search.xml" value="0.195" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_add_customer.xml" value="0.22" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_color_picker.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_colorpicker.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_complete_order_further_info.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_customer.xml" value="0.22" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_delivered_order_further_info.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_generate_invoice.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_home.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_invoice.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_main2.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/activity_order_details.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/completed_order.xml" value="0.1953125" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/customer_row.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/deliveredorder.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/dialog.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/fragment_add_customer.xml" value="0.1" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/fragment_completed_order.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/fragment_delivered_order.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/fragment_pending_order.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/fragment_view_customer.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/order.xml" value="0.22" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/order_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/pendingorder.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/layout/row.xml" value="0.1953125" />
+        <entry key="..\:/Users/Ahsan/AndroidStudioProjects/Tailor/app/src/main/res/menu/nav_items.xml" value="0.19635416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

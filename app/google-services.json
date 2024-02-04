@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "673424707530",
+    "firebase_url": "https://tailor-1bda2-default-rtdb.firebaseio.com",
+    "project_id": "tailor-1bda2",
+    "storage_bucket": "tailor-1bda2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673424707530:android:6d87d4fae98af62b864933",
+        "android_client_info": {
+          "package_name": "com.example.tailor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673424707530-iks4h07jjqk2trnnf5upifc9uqa03cv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tailor",
+            "certificate_hash": "2f16f38fe8201fbafb160382647b06ceb9a43be7"
+          }
+        },
+        {
+          "client_id": "673424707530-0kbvu7gls6a078ov4g865eajvo5n8op5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2m7gOyCf61g2jpp0sX7tzn2N3_M9kUCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673424707530-0kbvu7gls6a078ov4g865eajvo5n8op5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
